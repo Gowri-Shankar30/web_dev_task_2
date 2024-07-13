@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero section -->
+    <section id="home" class="hero">
+        <h1>Welcome to My E-commerce Store</h1>
+        <p>Discover our exclusive range of products</p>
+    </section>
+    <!-- Products section -->
+    <section id="products" class="content-section">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product" data-id="1">
+                <img src="https://via.placeholder.com/300x200.png?text=Product+1" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product" data-id="2">
+                <img src="https://via.placeholder.com/300x200.png?text=Product+2" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product" data-id="3">
+                <img src="https://via.placeholder.com/300x200.png?text=Product+3" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Cart section -->
+    <section id="cart" class="content-section">
+        <h1>Your Cart</h1>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <p class="total-price">Total: $0.00</p>
+        <button id="checkout-btn">Proceed to Checkout</button>
+    </section>
+    <!-- Checkout section -->
+    <section id="checkout" class="content-section">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My E-commerce Store</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
